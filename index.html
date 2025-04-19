@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Student Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <h1 class="form-title">STUDENT FORM</h1>
+
+  <div class="form-container">
+    <form id="student-form">
+      <table>
+        <tr>
+          <td><label for="nameinput">Name</label></td>
+          <td><input type="text" id="nameinput" placeholder="Enter your name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="ageinput">Age</label></td>
+          <td><input type="number" id="ageinput" placeholder="Enter your age" required /></td>
+        </tr>
+        <tr>
+          <td><label>Gender</label></td>
+          <td>
+            <label><input type="radio" name="gender" value="Male" required /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="courseinput">Course</label></td>
+          <td>
+            <select id="courseinput" required>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Python">Python</option>
+              <option value="HTML&CSS">HTML&CSS</option>
+              <option value="C++">C++</option>
+              <option value="Salesforce">Salesforce</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="emailinput">E-mail</label></td>
+          <td><input type="email" id="emailinput" placeholder="Enter your email" required /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="btn-cell">
+            <button type="submit" id="btn">Save</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <div class="table-container">
+    <table class="studenttable" border="1">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>COURSE</th>
+          <th>GENDER</th>
+          <th>EMAIL</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Data rows inserted here by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

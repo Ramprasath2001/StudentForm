@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Source Code Pro", monospace;
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .form-container {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form table {
+    width: 100%;
+  }
+  
+  form td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="email"],
+  form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form label {
+    font-weight: 600;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  
+  .btn-cell {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  #btn {
+    padding: 10px 20px;
+    background-color: #5ee2a0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn:hover {
+    background-color: #36cc8d;
+  }
+  
+  .table-container {
+    max-width: 90%;
+    margin: 40px auto;
+    overflow-x: auto;
+  }
+  
+  .studenttable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .studenttable th,
+  .studenttable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .studenttable th {
+    background-color: #f5f5f5;
+  }
+  
+  .deletebtn {
+    background-color: lightcoral;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .deletebtn:hover {
+    background-color: red;
+  }
+  
